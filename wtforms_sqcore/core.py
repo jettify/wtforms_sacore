@@ -16,12 +16,6 @@ __all__ = (
 )
 
 
-warnings.warn(
-    'wtforms.ext.sqlalchemy.orm is deprecated, and will be removed in WTForms 3.0.',
-    DeprecationWarning
-)
-
-
 def converts(*args):
     def _inner(func):
         func._converter_for = frozenset(args)
